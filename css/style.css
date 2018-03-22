@@ -1,0 +1,99 @@
+/* ===============================================================
+  ------------- Base styles: opinionated defaults-----------------
+   ============================================================== */
+
+html {
+	color: #222;
+	font-size: 1em;
+	font-family: 'Raleway';
+}
+
+a {
+	text-decoration: none;
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+	vertical-align: middle;
+}
+
+textarea {
+	resize: vertical;
+}
+
+.hidden {
+	display: none !important;
+}
+
+ul,
+li {
+	list-style-type: none;
+}
+
+.loader {
+position : fixed;
+z-index: 9999;
+/* -- background : url('../img/loader.gif') 50% 50% no-repeat; --- Inserer le gif ici ---*/
+background-color: #fff;
+top : 0px;
+left : 0px;
+height : 100%;
+width : 100%;
+cursor : wait;
+}
+
+::placeholder {
+	font-style: italic;
+	text-align: center;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+/* =============================================
+  ------------------- PAGE 1 -------------------
+   ============================================= */
+
+.page_home {
+	height: 100vh;
+	width: 100%;
+	background-color: red;
+}
+
+/* =============================================
+  ------------------- PAGE 2 -------------------
+   ============================================= */
+
+
+.page_desc {
+	height: 100vh;
+	width: 100%;
+	background-color: blue;
+
+}
+
+/* =============================================
+  ------------------- PAGE 3 -------------------
+   ============================================= */
+
+.page_graphics {
+	height: 100vh;
+	width: 100%;
+	background-color: pink;
+
+}
