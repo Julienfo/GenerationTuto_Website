@@ -3,22 +3,22 @@
    ============================================================== */
 
 html {
-	color: #222;
-	font-size: 1em;
-	font-family: 'Raleway';
+    color: #222;
+    font-size: 1em;
+    font-family: 'Raleway';
 }
 
 a {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 hr {
-	display: block;
-	height: 1px;
-	border: 0;
-	border-top: 1px solid #ccc;
-	margin: 1em 0;
-	padding: 0;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
 }
 
 audio,
@@ -27,42 +27,42 @@ iframe,
 img,
 svg,
 video {
-	vertical-align: middle;
+    vertical-align: middle;
 }
 
 textarea {
-	resize: vertical;
+    resize: vertical;
 }
 
 .hidden {
-	display: none !important;
+    display: none !important;
 }
 
 ul,
 li {
-	list-style-type: none;
+    list-style-type: none;
 }
 
 .loader {
-position : fixed;
-z-index: 9999;
-/* -- background : url('../img/loader.gif') 50% 50% no-repeat; --- Inserer le gif ici ---*/
-background-color: #fff;
-top : 0px;
-left : 0px;
-height : 100%;
-width : 100%;
-cursor : wait;
+    position: fixed;
+    z-index: 9999;
+    /* -- background : url('../img/loader.gif') 50% 50% no-repeat; --- Inserer le gif ici ---*/
+    background-color: #fff;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    cursor: wait;
 }
 
 ::placeholder {
-	font-style: italic;
-	text-align: center;
+    font-style: italic;
+    text-align: center;
 }
 
 ::selection {
-	background: #b3d4fc;
-	text-shadow: none;
+    background: #b3d4fc;
+    text-shadow: none;
 }
 
 /* =============================================
@@ -70,20 +70,24 @@ cursor : wait;
    ============================================= */
 
 .page_home {
-	height: 100vh;
-	width: 100%;
-	background-color: red;
+    height: 100vh;
+    width: 100%;
+    background-color: red;
+}
+
+.fa-graduation-cap {
+    color: #fff;
+    font-size: 1em;
 }
 
 /* =============================================
   ------------------- PAGE 2 -------------------
    ============================================= */
 
-
 .page_desc {
-	height: 100vh;
-	width: 100%;
-	background-color: blue;
+    height: 100vh;
+    width: 100%;
+    background-color: blue;
 
 }
 
@@ -92,8 +96,8 @@ cursor : wait;
    ============================================= */
 
 .page_graphics {
-	height: 100vh;
-	width: 100%;
-	background-color: pink;
+    height: 100vh;
+    width: 100%;
+    background-color: pink;
 
 }
