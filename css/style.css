@@ -46,13 +46,16 @@ li {
 .loader {
     position: fixed;
     z-index: 9999;
-    /* -- background : url('../img/loader.gif') 50% 50% no-repeat; --- Inserer le gif ici ---*/
-    background-color: #fff;
+    background: url('../img/gg.gif') 50% 50% no-repeat;
+    background-size: 5%;
+    background-color: black;
+    opacity: 0.5;
+    /*background-image: url(../img/backgroundgen.png)100%; */
     top: 0px;
     left: 0px;
     height: 100%;
     width: 100%;
-    cursor: wait;
+    cursor: progress;
 }
 
 ::placeholder {
@@ -65,6 +68,9 @@ li {
     text-shadow: none;
 }
 
+
+/*------- Banniere ----*/
+
 /* =============================================
   ------------------- PAGE 1 -------------------
    ============================================= */
@@ -72,12 +78,101 @@ li {
 .page_home {
     height: 100vh;
     width: 100%;
-    background-color: red;
+    background-image: url(../img/fond%20web%20inter.png);
+    background-color: white;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
 }
 
-.fa-graduation-cap {
+/*.fa-graduation-cap {
     color: #fff;
     font-size: 1em;
+}*/
+
+.Mactosh {
+    height: 750px;
+    width: 750px;
+    margin-top: 100px;
+    right: 150px;
+    margin-left: 100px;
+}
+
+
+#wait {
+    display: flex;
+    flex-direction: column;
+}
+
+.titleone {
+    color: white;
+    font-family: lobster;
+    font-size: 50px;
+    padding-top: 100px;
+    margin-right: auto;
+
+    display: inline-block;
+    position: relative;
+
+
+
+}
+
+.titleone::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.titleone:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.kezako {
+    color: white;
+    font-size: 30px;
+    margin-right: 100px;
+    font-family: quicksand;
+    line-height: 40px;
+    text-align: justify;
+}
+
+.listelink {
+    display: flex;
+}
+
+.videolink {
+    color: white;
+
+    font-family: Love Ya Like A Sister;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+
+    padding: 20px;
+    margin: 70px;
+}
+
+.pvids {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+
+.videolink:hover {
+    border-radius: 20px;
+    transition: transform 1.25s ease-out;
 }
 
 /* =============================================
@@ -87,7 +182,11 @@ li {
 .page_desc {
     height: 100vh;
     width: 100%;
-    background-color: blue;
+    background-color: white;
+    background: url(../img/fond%20web%20mid.png);
+    background-size: cover;
+
+
 
 }
 
@@ -98,6 +197,7 @@ li {
 .page_graphics {
     height: 100vh;
     width: 100%;
-    background-color: pink;
-
+    background-color: white;
+    background-image: url(../img/fond%20web%20fin.png);
+    background-size: cover;
 }
