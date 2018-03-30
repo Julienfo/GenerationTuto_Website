@@ -79,11 +79,10 @@ li {
     height: 100vh;
     width: 100%;
     background-image: url(../img/fond%20web%20inter.png);
-    background-color: white;
     background-size: cover;
-    display: flex;
-    flex-direction: row;
-    align-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
 }
 
 /*.fa-graduation-cap {
@@ -91,35 +90,54 @@ li {
     font-size: 1em;
 }*/
 
+=------------------- PAGE 2 -------------------=============================================*/ .page_desc {
+    min-height: 100vh;
+    width: 100%;
+    /*background-color: white;*/
+    background-image: url(../img/fond%20web%20mid.png);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+
+}
+
+.grid_home {
+    text-align: center;
+}
+
 .Mactosh {
-    height: 750px;
-    width: 750px;
-    margin-top: 100px;
-    right: 150px;
-    margin-left: 100px;
+    width: 85%;
+    animation: bounce 0.7s ease infinite;
+    margin-top: 10%;
+    margin-left: 10%;
 }
 
 
-#wait {
-    display: flex;
-    flex-direction: column;
+
+@keyframes bounce {
+    from {
+        top: 10px;
+    }
+    50% {
+        top: 0px;
+    }
+    to {
+        top: 10px;
+    }
 }
 
-.titleone {
-    color: white;
+
+.home_title {
+    color: #fff;
     font-family: lobster;
-    font-size: 50px;
-    padding-top: 100px;
-    margin-right: auto;
-
+    font-size: 3.5em;
+    padding-top: 10%;
     display: inline-block;
     position: relative;
-
-
-
 }
 
-.titleone::after {
+.home_title::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -132,63 +150,46 @@ li {
     transition: transform 0.25s ease-out;
 }
 
-.titleone:hover::after {
+.home_title:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
 
-.kezako {
-    color: white;
-    font-size: 30px;
-    margin-right: 100px;
+.home_desc {
+    color: #fff;
+    font-size: 1.3em;
+    margin-right: 15%;
     font-family: quicksand;
     line-height: 40px;
     text-align: justify;
 }
 
 .listelink {
-    display: flex;
+    text-align: center;
+    margin-right: 12%;
+    margin-top: 12%;
 }
 
 .videolink {
-    color: white;
-
-    font-family: Love Ya Like A Sister;
-    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 5px;
-
-    padding: 20px;
-    margin: 70px;
+    padding: 20px 80px;
+    border: 2px solid #fff;
+    background-color: #3A5C38;
+    font-family: Love Ya Like A Sister;
+    color: #fff;
+    font-size: 2em;
+    transition: ease-in-out 300ms;
 }
-
-.pvids {
-    color: white;
-    text-align: center;
-    font-size: 40px;
-    margin-top: -10px;
-    margin-bottom: -10px;
-}
-
 
 .videolink:hover {
-    border-radius: 20px;
-    transition: transform 1.25s ease-out;
+    background-color: #fff;
+    color: #3A5C38;
 }
 
-/* =============================================
-  ------------------- PAGE 2 -------------------
-   ============================================= */
-
-.page_desc {
-    height: 100vh;
-    width: 100%;
-    background-color: white;
-    background: url(../img/fond%20web%20mid.png);
-    background-size: cover;
 
 
 
-}
+
 
 /* =============================================
   ------------------- PAGE 3 -------------------
