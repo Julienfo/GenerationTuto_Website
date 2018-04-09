@@ -56,13 +56,13 @@ html.fp-enabled,
     -khtml-user-select: none; /* webkit (konqueror) browsers */
     -ms-user-select: none; /* IE10+ */
     position: absolute;
-    z-index: 4;
+    z-index: 999;
     top: 50%;
     cursor: pointer;
     width: 0;
     height: 0;
     border-style: solid;
-    margin-top: -38px;
+    margin-top: 0px;
     -webkit-transform: translate3d(0,0,0);
     -ms-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
